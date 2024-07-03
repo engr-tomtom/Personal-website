@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- ===== BOX ICONS ===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Portfolio responsive complete</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo" data-testid="slackDisplayName">Tom_electro</a>
+                </div>
+                <div><h4 id="datetime" class="nav__logo" data-testid="currentTimeUTC">Current date and time:</h4></div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home" id="home">
+                <div class="home__container bd-grid">
+                    <h1 class="home__title"><span>HE</span><br>LLO.</h1>
+                    
+
+                    <div class="home__scroll">
+                        <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt' ></i>Scroll down</a>
+                    </div>
+
+                    <img src="assets/img/perfil.png" width="500px" height="600px" alt="" class="home__img" data-testid="slackProfilePicture">
+                </div>
+            </section>
+            
+            <!--===== ABOUT =====-->
+            <section class="about section" id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/perfil.png" width="500px" height="600px" alt="" data-testid="slackProfilePicture">
+                    </div>
+
+                    <div>
+                        <h2 class="about__subtitle">I am Tomiwa Oladipo</h2>
+                        <span class="about__profession">Frontend Developer</span>
+                        <p class="about__text">The following are my Tech Goals for the next 2 years:</p>
+                        <ol>
+                            <li><h5>Learning and Mastery:</h5></li>
+                                <ul>
+                                    <li>-Gain proficiency in at least one programming language.</li>
+                                    <li>-Understand fundamental data structures and algorithms.</li>
+                                    <li>-Familiarize yourself with version control.</li>
+                                </ul>
+                            <li><h5>Project Contribution:</h5></li>
+                                <ul>
+                                    <li>-Successfully complete assigned tasks and projects on time.</li>
+                                    <li>-Collaborate effectively with team members.</li>
+                                    <li>-Seek feedback and continuously improve your code quality.</li>
+                                </ul>
+                            <li><h5>Skill Development:</h5></li>
+                                <ul>
+                                    <li>-Expand knowledge of software development principles and best practices.</li>
+                                    <li>-Learn to write clean, maintainable code.</li>
+                                    <li>-Explore new technologies and tools relevant to your projects.</li>
+                                </ul>
+                            <li><h5>Communication and Documentation:</h5></li>
+                                <ul>
+                                    <li>-Improve technical communication skills (both written and verbal).</li>
+                                    <li>-Document your work clearly and comprehensively.</li>
+                                    <li>-Participate actively in team meetings and discussions.</li>
+                                </ul>
+                            <li><h5>Career Growth:</h5></li>
+                                <ul>
+                                    <li>-Set personal development goals and track your progress.</li>
+                                    <li>-Seek mentorship and guidance from senior developers.</li>
+                                    <li>-Stay updated with industry trends and advancements.</li>
+                                </ul>
+                        </ol>
+                        <p>With the aim of solidifying my React skill and connecting with like-minded developers, I am starting an internship program at <a href="https://www.hng.tech/learn" style="color: #5361FF" data-testid="hngLink">HNG Internship</a></p>
+
+                        <div class="about__social">
+                            <a href="#" class="about__social-icon"><i class='bx bxl-linkedin' ></i></a>
+                            <a href="#" class="about__social-icon"><i class='bx bxl-github' ></i></a>
+                            <a href="#" class="about__social-icon"><i class='bx bxl-twitter' ></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+           
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <div class="contact__info">
+                        <h3 class="contact__subtitle">EMAIL</h3>
+                        <span class="contact__text" data-testid="slackEmail">olatom.tomiwa.com</span>
+
+                        <h3 class="contact__subtitle">PHONE</h3>
+                        <span class="contact__text">+234 902-587-2201</span>
+
+                        <h3 class="contact__subtitle">ADRESS</h3>
+                        <span class="contact__text">Lagos Nigeria</span>
+                    </div>
+
+                    <form action="" class="contact__form">
+                        <div class="contact__inputs">
+                            <input type="text" placeholder="Name" class="contact__input">
+                            <input type="mail" placeholder="Email" class="contact__input">
+                        </div>
+
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+
+                        <input type="submit" value="Send" class="contact__button">
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer section">
+            <div class="footer__container bd-grid">
+                <div class="footer__data">TOMIWA
+                    <h2 class="footer__title"> OLADIPO</h2>
+                    <p class="footer__text">I'm Tomiwa Oladipo and this is my personal website</p>
+                </div>
+
+                <div class="footer__data">
+                    <h2 class="footer__title">EXPLORE</h2>
+                    <ul>
+                        <li><a href="#home" class="footer__link">Home</a></li>
+                        <li><a href="#about" class="footer__link">About</a></li>
+                        <li><a href="#skills" class="footer__link">Skills</a></li>
+                        <li><a href="#portfolio" class="footer__link">Portfolio</a></li>
+                        <li><a href="#Contact" class="footer__link">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__data">
+                    <h2 class="footer__title">FOLLOW</h2>
+                    <a href="#" class="footer__social"><i class='bx bxl-facebook' ></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-instagram' ></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-twitter' ></i></a>
+                </div>
+
+
+            </div>
+        </footer>
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
